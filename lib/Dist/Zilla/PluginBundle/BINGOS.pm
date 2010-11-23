@@ -18,7 +18,7 @@ sub configure {
     'PodWeaver',
     'CompileTests',
     [ 'ChangelogFromGit' => 
-        { file_name => 'Changes', tag_regexp => '^\d' } 
+        { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) } 
     ],
   );
 
@@ -54,6 +54,7 @@ following dist.ini:
   [ChangelogFromGit]
   file_name = Changes
   tag_regexp = ^\d
+  max_age = 1825
 
   [ReadmeFromPod]
   [CompileTests]
