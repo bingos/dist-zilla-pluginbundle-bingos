@@ -65,7 +65,7 @@ following dist.ini:
 
 =item C<configure>
 
-See L<Dist::Zilla::PluginBundle::Easy>.
+See L<Dist::Zilla::PluginBundle::Role::Easy>.
 
 =back
 
