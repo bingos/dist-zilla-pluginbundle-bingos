@@ -17,8 +17,9 @@ sub configure {
     'ReadmeFromPod',
     'PodWeaver',
     'CompileTests',
-    [ 'ChangelogFromGit' => 
-        { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) } 
+    'Clean',
+    [ 'ChangelogFromGit' =>
+        { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) }
     ],
   );
 
@@ -58,6 +59,8 @@ following dist.ini:
 
   [ReadmeFromPod]
   [CompileTests]
+
+  [Clean]
 
 =head2 METHODS
 
