@@ -16,7 +16,7 @@ sub configure {
     'GithubMeta',
     'ReadmeFromPod',
     'PodWeaver',
-    'CompileTests',
+    'Test::Compile',
     'Clean',
     [ 'ChangelogFromGit' =>
         { file_name => 'Changes', tag_regexp => '^\d', max_age => ( 5 * 365 ) }
@@ -58,7 +58,7 @@ following dist.ini:
   max_age = 1825
 
   [ReadmeFromPod]
-  [CompileTests]
+  [Test::Compile]
 
   [Clean]
 
