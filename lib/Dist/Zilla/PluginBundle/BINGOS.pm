@@ -4,6 +4,7 @@ package Dist::Zilla::PluginBundle::BINGOS;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
+with 'Dist::Zilla::Role::PluginBundle::PluginRemover';
 
 sub configure {
   my $self = shift;
@@ -61,6 +62,11 @@ following dist.ini:
   [Test::Compile]
 
   [Clean]
+
+This PluginBundle also supports PluginRemover, so dropping a plugin is as easy as this:
+
+   [@BINGOS]
+   -remove = PluginIDontWant
 
 =head2 METHODS
 
