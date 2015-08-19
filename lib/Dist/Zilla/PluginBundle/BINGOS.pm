@@ -15,7 +15,7 @@ sub configure {
     'PodCoverageTests',
     'PkgVersion',
     'GithubMeta',
-    'ReadmeFromPod',
+    'ReadmeAnyFromPod',
     'PodWeaver',
     'Test::Compile',
     'Clean',
@@ -58,7 +58,7 @@ following dist.ini:
   tag_regexp = ^(\\d+\\.\\d+)$
   max_age = 1825
 
-  [ReadmeFromPod]
+  [ReadmeAnyFromPod]
   [Test::Compile]
 
   [Clean]
